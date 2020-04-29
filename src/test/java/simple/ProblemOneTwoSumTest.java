@@ -1,6 +1,6 @@
-package test.java;
+package test.java.simple;
 
-import main.java.ProblemOneTwoSum;
+import main.java.simple.ProblemOneTwoSum;
 import org.junit.Test;
 
 public class ProblemOneTwoSumTest {
