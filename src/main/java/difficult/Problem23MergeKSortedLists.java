@@ -2,13 +2,14 @@ package main.java.difficult;
 
 import main.java.toolClasses.ListNode;
 
+
 public class Problem23MergeKSortedLists {
     /*
     * 3ms 83.29%
     * 42.2MB 42.65%
-    *
+    * 分治法
     * */
-    public ListNode mergeKLists(ListNode[] lists) {
+    public ListNode mergeKLists1(ListNode[] lists) {
         int myLength=lists.length;
         if(myLength==0)return null;
         while (myLength!=1){
