@@ -14,7 +14,7 @@ public class Problem19RemoveNthNodeFromEndOfListTest {
         ListNode newNode;
         for(int i=2;i<4;++i){
             newNode=new ListNode(i);
-            next.setNext(newNode);
+            next.next=newNode;
             next=next.next;
         }
         System.out.println(
