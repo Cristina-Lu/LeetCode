@@ -9,7 +9,7 @@ public class Problem23MergeKSortedLists {
     * 42.2MB 42.65%
     * 分治法
     * */
-    public ListNode mergeKLists1(ListNode[] lists) {
+    public ListNode mergeKLists(ListNode[] lists) {
         int myLength=lists.length;
         if(myLength==0)return null;
         while (myLength!=1){
