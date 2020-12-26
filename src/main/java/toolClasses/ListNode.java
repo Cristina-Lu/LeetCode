@@ -1,6 +1,5 @@
-package main.java.toolClasses;
+package java.toolClasses;
 
-import main.java.simple.Problem21MergeTwoSortedLists;
 
 public class ListNode {
     public int val;

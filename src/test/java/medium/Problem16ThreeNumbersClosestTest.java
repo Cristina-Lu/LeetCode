@@ -1,6 +1,6 @@
-package test.java.medium;
+package java.medium;
 
-import main.java.medium.Problem16ThreeNumbersClosest;
+
 import org.junit.Test;
 
 public class Problem16ThreeNumbersClosestTest {

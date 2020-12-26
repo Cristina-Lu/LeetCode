@@ -1,4 +1,4 @@
-package main.java.medium;
+package java.medium;
 
 public class ProblemEightStringToInteger {
     /*

@@ -1,6 +1,5 @@
-package test.java.medium;
+package java.medium;
 
-import main.java.medium.Problem22GenerateParentheses;
 import org.junit.Test;
 
 public class Problem22GenerateParenthesesTest {

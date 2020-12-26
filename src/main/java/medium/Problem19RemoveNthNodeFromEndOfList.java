@@ -1,6 +1,6 @@
-package main.java.medium;
+package java.medium;
 
-import main.java.toolClasses.ListNode;
+import java.toolClasses.ListNode;
 
 
 public class Problem19RemoveNthNodeFromEndOfList {

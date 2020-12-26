@@ -1,6 +1,5 @@
-package test.java.simple;
+package java.simple;
 
-import main.java.simple.Problem13RomanToInteger;
 import org.junit.Test;
 
 public class Problem13RomanToIntegerTest {

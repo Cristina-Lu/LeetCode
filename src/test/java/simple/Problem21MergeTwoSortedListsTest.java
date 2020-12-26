@@ -1,8 +1,8 @@
-package test.java.simple;
+package java.simple;
 
-import main.java.simple.Problem21MergeTwoSortedLists;
-import main.java.toolClasses.ListNode;
 import org.junit.Test;
+
+import java.toolClasses.ListNode;
 
 public class Problem21MergeTwoSortedListsTest {
     @Test

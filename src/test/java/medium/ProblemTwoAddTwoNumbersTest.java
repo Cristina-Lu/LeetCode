@@ -1,6 +1,5 @@
-package test.java.medium;
+package java.medium;
 
-import main.java.medium.ProblemTwoAddTwoNumbers;
 import org.junit.Test;
 
 public class ProblemTwoAddTwoNumbersTest {

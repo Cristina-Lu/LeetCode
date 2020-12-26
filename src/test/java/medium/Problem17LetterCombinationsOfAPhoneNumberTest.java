@@ -1,6 +1,5 @@
-package test.java.medium;
+package java.medium;
 
-import main.java.medium.Problem17LetterCombinationsOfAPhoneNumber;
 import org.junit.Test;
 
 public class Problem17LetterCombinationsOfAPhoneNumberTest {

@@ -1,6 +1,5 @@
-package test.java.medium;
+package java.medium;
 
-import main.java.medium.ProblemEightStringToInteger;
 import org.junit.Test;
 
 public class ProblemEightStringToIntegerTest {

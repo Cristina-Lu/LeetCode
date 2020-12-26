@@ -1,4 +1,4 @@
-package main.java.difficult;
+package java.difficult;
 
 import main.java.toolClasses.ListNode;
 

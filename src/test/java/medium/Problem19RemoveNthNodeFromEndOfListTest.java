@@ -1,8 +1,8 @@
-package test.java.medium;
+package java.medium;
 
-import main.java.medium.Problem19RemoveNthNodeFromEndOfList;
-import main.java.toolClasses.ListNode;
 import org.junit.Test;
+
+import java.toolClasses.ListNode;
 
 public class Problem19RemoveNthNodeFromEndOfListTest {
     @Test

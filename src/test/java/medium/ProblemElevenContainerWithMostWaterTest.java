@@ -1,6 +1,5 @@
-package test.java.medium;
+package java.medium;
 
-import main.java.medium.ProblemElevenContainerWithMostWater;
 import org.junit.Test;
 
 public class ProblemElevenContainerWithMostWaterTest {

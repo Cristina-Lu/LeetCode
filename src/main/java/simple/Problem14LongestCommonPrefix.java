@@ -1,4 +1,4 @@
-package main.java.simple;
+package java.simple;
 
 public class Problem14LongestCommonPrefix {
 

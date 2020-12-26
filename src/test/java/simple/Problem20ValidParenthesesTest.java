@@ -1,6 +1,5 @@
-package test.java.simple;
+package java.simple;
 
-import main.java.simple.Problem20ValidParentheses;
 import org.junit.Test;
 
 public class Problem20ValidParenthesesTest {

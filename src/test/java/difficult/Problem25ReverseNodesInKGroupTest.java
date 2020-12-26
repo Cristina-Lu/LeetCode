@@ -1,7 +1,7 @@
-package test.java.difficult;
+package java.difficult;
 
-import main.java.difficult.Problem25ReverseNodesInKGroup;
-import main.java.toolClasses.ListNode;
+
+import java.toolClasses.ListNode;
 import org.junit.Test;
 
 public class Problem25ReverseNodesInKGroupTest {

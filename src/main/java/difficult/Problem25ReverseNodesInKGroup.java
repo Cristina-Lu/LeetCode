@@ -1,6 +1,6 @@
-package main.java.difficult;
+package java.difficult;
 
-import main.java.toolClasses.ListNode;
+import java.toolClasses.ListNode;
 
 public class Problem25ReverseNodesInKGroup {
     /*

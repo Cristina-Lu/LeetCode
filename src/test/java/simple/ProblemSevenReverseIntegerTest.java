@@ -1,6 +1,5 @@
-package test.java.simple;
+package java.simple;
 
-import main.java.simple.ProblemSevenReverseInteger;
 import org.junit.Test;
 
 public class ProblemSevenReverseIntegerTest {
