@@ -9,7 +9,7 @@ public class Problem30SubstringWithConcatenationOfAllWordsTest {
                 =new Problem30SubstringWithConcatenationOfAllWords();
         /*//测试用例1
         String s="barfoofoobarthefoobarman";
-        String[] m = {"bar","foo","the"};*/
+        String[] m = {"bar","foo","the"};//[6,9,12]*/
 
         /*//测试用例2
         String s = "wordgoodgoodgoodbestword";
@@ -17,11 +17,11 @@ public class Problem30SubstringWithConcatenationOfAllWordsTest {
 
         /*//测试用例3
         String s = "ababababab";
-        String[] m = {"ababa","babab"};*/
+        String[] m = {"ababa","babab"};//[0]*/
 
         /*//测试用例4
         String s="thethethethe";
-        String[] m = {"foo","foo","the","man"};*/
+        String[] m = {"foo","foo","the","man"};//[]*/
 
         //测试用例5
         String s="bcabbcaabbccacacbabccacaababcbb";
