@@ -63,6 +63,16 @@ public class Problem33SearchInRotatedSortedArray {
     }
 
     public int search(int[] nums, int target){
+        //对两个元素的数组做特殊处理
+        if(nums.length == 2 ){
+            if(nums[0] == target){
+                return 0;
+            }else if(nums[1] == target){
+                return 1;
+            }else {
+                return -1;
+            }
+        }
         //定义返回值，即目标数值所在位置的初始值
         int aim =-1;
         //定义数组端节点
@@ -71,7 +81,7 @@ public class Problem33SearchInRotatedSortedArray {
         if(nums[left] > nums[right]){//折点前后有值，找到折点，按两个升序数组处理
             int tLeft = 0,tRight = nums.length-1;
             //二分法找到折点
-            while (tLeft<tRight){
+            while (tLeft+1<tRight){
                 aim = (tLeft+tRight)/2;
                 if(aim+1<nums.length && nums[aim-1]>nums[aim]){
                     break;
@@ -81,6 +91,8 @@ public class Problem33SearchInRotatedSortedArray {
                     tRight = aim;
                 }
             }
+            if(tLeft+1 == tRight)
+                aim = aim+1;
             //确定目标所在数组（前一个数组中，后一个数组中，不在数组中）
             if(target>nums[0] && target<nums[aim-1]){
                 right = aim-1;
