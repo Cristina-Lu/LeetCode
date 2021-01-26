@@ -62,6 +62,7 @@ public class Problem33SearchInRotatedSortedArray {
             return aim;
     }
 
+    //通过，但内存消耗较大
     public int search(int[] nums, int target){
         //对两个元素的数组做特殊处理
         if(nums.length == 2 ){
