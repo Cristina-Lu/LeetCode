@@ -63,7 +63,7 @@ public class Problem33SearchInRotatedSortedArray {
     }
 
     //通过，但内存消耗较大
-    public int search(int[] nums, int target){
+    public int search2(int[] nums, int target){
         //对两个元素的数组做特殊处理
         if(nums.length == 2 ){
             if(nums[0] == target){
@@ -140,5 +140,26 @@ public class Problem33SearchInRotatedSortedArray {
             return -1;
         else
             return aim;
+    }
+
+    public int search(int[] nums,int target){
+        /*
+        * 异或规则
+        * System.out.println(false^true^false);//true
+        * System.out.println(true^true^false);//false
+        * System.out.println(false^false^false);//false
+        * System.out.println(true^true^true);//true
+         */
+
+        int left = 0,right = nums.length-1;
+        while (left<right){
+            int mid = (left+right)/2;
+            if(nums[mid]<nums[0]^target<nums[0]^target>nums[mid]){
+                left = mid+1;
+            }else {
+                right=mid;
+            }
+         }
+        return left == right && nums[left]==target?left:-1;
     }
 }
