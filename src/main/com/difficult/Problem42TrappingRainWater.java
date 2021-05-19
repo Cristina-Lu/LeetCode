@@ -13,7 +13,7 @@ public class Problem42TrappingRainWater {
     * 但实际上应该按照【4，……，3，……，5】计算
     *
     * */
-    public int trap(int[] height) {
+    public int trap1(int[] height) {
         int size=0;
         int left=0,right=0;
         for (int i = 1; i <height.length ; i++) {
@@ -25,6 +25,33 @@ public class Problem42TrappingRainWater {
                 left=i;
             }
         }
+        return size;
+    }
+
+    public int trap(int[] height) {
+        int size=0;
+        int left=0,right=height.length-1,leftMax=0,rightMax=0;
+        while (true){
+            if(left!=right){
+            if (height[left]<=height[right]){
+                if(height[left]>leftMax){
+                    leftMax=height[left];
+                }else {
+                    size+=leftMax-height[left];
+                }
+                left++;
+            }else {
+                if(height[right]>rightMax){
+                    rightMax=height[right];
+                }else {
+                    size+=rightMax-height[right];
+                }
+                right--;
+            }}else {
+                break;
+            }
+        }
+
         return size;
     }
 }
