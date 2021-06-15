@@ -82,7 +82,20 @@ public class Problem43MultiplyStrings {
         StringBuilder stringBuilder = new StringBuilder();
         int i = num1.length();
         int j = num2.length();
+        char[] chars = new char[i+j];
+        int up =0;
+        for (int k = 1; k<i+j ; ++k) {
+            /*int n1=0,n2=0,n3=0,n4 = 0;
+            n1=(num1.charAt(i-k)-'0')*(num2.charAt(j-k)-'0')/10;
+            n2=(num1.charAt(i-k+1)-'0')*(num2.charAt(j-k)-'0')%10;
+            n3=(num1.charAt(i-k-1)-'0')*(num2.charAt(j-k+1)-0)/10;
+            n4=(num1.charAt(i-k)-'0')*(num2.charAt(j-k+1)-'0');*/
 
+            int sum=0;
+            for (int m=0;m<j;++m){
+                sum+=(num1.charAt(i-k-m)-'0')*(num2.charAt(j-k+m))/10;
+            }
+       }
         return stringBuilder.toString();
     }
 }

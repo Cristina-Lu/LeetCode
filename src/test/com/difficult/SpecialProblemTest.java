@@ -108,9 +108,23 @@ public class SpecialProblemTest {
 
         BigDecimal bigDecimal3 = new BigDecimal("1.2");
         BigDecimal bigDecimal4 = new BigDecimal("1.20");
+        /*
+        * 返回0，1，-1，仅确认数值相同
+        * */
         System.out.println(bigDecimal3.compareTo(bigDecimal4)==0);//true
+        /*
+        * equals会先确认精度是否相同，
+        * 然后确认其intCompact（看表现为移除小数点后的所有数字，包括精度位）是否相同
+        * */
         System.out.println(bigDecimal3.equals(bigDecimal4));//false
 
+        Float aa = 1.0f-0.9f;
+        Float bb = 0.9f-0.8f;
+        /*
+        * Float的equal与float的==相同，因精度问题无法获得相等的值
+        * */
+        System.out.println(aa.equals(bb));//false
 
+        bigDecimal1.setScale(2,BigDecimal.ROUND_CEILING);
     }
 }
