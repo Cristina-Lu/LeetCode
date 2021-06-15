@@ -3,6 +3,8 @@ package com.difficult;
 import org.junit.Test;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
+import java.util.List;
 
 public class SpecialProblemTest {
 
@@ -112,5 +114,37 @@ public class SpecialProblemTest {
         System.out.println(bigDecimal3.equals(bigDecimal4));//false
 
 
+    }
+
+    @Test
+    public void theTestOfArraysDasList(){
+        String[] strings = {"2","3","5"};
+        List<String> myList = Arrays.asList(strings);
+        System.out.println("myList first print:"+myList.toString());//[2,3,5],可通过Arrays.asList构造集合
+        strings[1]="8";
+        System.out.println("after change the strings,myList print:" +myList.toString());//[2,8,5]
+        myList.set(0,"0");
+        System.out.println("after change the List,strings[0] print:"+strings[0]);//0
+        //即，通过Arrays.asList构造的集合属于原数组的浅拷贝。可通过更改原数组对集合中的内容进行更改，也可以通过梗概集合中的元素对原数组进行更改
+        try {
+            myList.add("6");
+        }catch (Exception e){
+            System.out.println(e.toString());//java.lang.UnsupportedOperationException
+            /*
+            * 调用Arrays.asList()生产的List的add、remove方法时报异常，
+            * 这是由Arrays.asList() 返回的市Arrays的内部类ArrayList，而不是java.util.ArrayList。
+            * Arrays的内部类ArrayList和java.util.ArrayList都是继承AbstractList，
+            * remove、add等方法AbstractList中是默认throw UnsupportedOperationException而且不作任何操作。
+            * java.util.ArrayList重新了这些方法而Arrays的内部类ArrayList没有重新，所以会抛出异常。
+            */
+        }
+
+        //对基础数据类型的尝试
+        int[] ints = {2,3,5};
+        //List<int> list =  Arrays.asList(ints); 编译出错
+        //List<Integer> list = Arrays.asList(ints);编译出错,原因是泛型不支持基础数据类型
+        Integer[] integers ={2,3,5};
+        //List<int> list = Arrays.asList(integers)；编译出错，原因是泛型不支持基础数据类型
+        List<Integer> list = Arrays.asList(integers);
     }
 }
