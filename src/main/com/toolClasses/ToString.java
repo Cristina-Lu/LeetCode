@@ -15,4 +15,18 @@ public  class ToString {
         System.out.print("}");
         System.out.println();
     }
+
+    static public void listNode(ListNode listNode){
+        System.out.print("[");
+        ListNode now = listNode;
+        while (now!=null){
+            System.out.print(now.val);
+            if(now.next!=null){
+                System.out.print(",");
+            }
+            now = now.next;
+        }
+        System.out.print("]");
+        System.out.println();
+    }
 }
