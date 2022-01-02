@@ -1,5 +1,7 @@
 package com.toolClasses;
 
+import com.sun.org.apache.xpath.internal.operations.String;
+
 public  class ToString {
     static public  void TwoFloorInt(int[][] interval){
         System.out.print("{");
@@ -28,5 +30,13 @@ public  class ToString {
         }
         System.out.print("]");
         System.out.println();
+    }
+
+    static public void SingleInt(int[] digits){
+        System.out.print("[");
+        for (int t:digits) {
+            System.out.print(t +",");
+        }
+        System.out.println("]");
     }
 }
