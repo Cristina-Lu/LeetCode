@@ -31,9 +31,6 @@ public class Problem72EditDistance {
                         dp[i][j] = dp[i - 1][j];
                     }else if(j!=0){
                         dp[i][j]= dp[i][j-1];
-                        if(word2.charAt(j)==word2.charAt(j-1)){
-                            dp[i][j]++;
-                        }
                     }else {
                         dp[i][j]=0;
                     }
