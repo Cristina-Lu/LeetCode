@@ -43,7 +43,7 @@ public class Problem239SlidingWindowMaximum {
     }
 
     /*
-    * 使用最小堆，并记录每个节点的位置，使用懒加载原则，在不影响结果的情况下不调整堆结构
+    * 使用最小堆，并记录每个节点的位置，使用懒加载原则，即在不影响结果的情况下不调整堆结构
     * */
     public int[] maxSlidingWindow(int[] nums, int k) {
 
