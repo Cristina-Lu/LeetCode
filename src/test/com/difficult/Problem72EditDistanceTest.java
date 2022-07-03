@@ -30,7 +30,17 @@ public class Problem72EditDistanceTest {
 
         String word11 ="zoologicoarchaeologist";
         String word12 ="zoogeologist";
-        System.out.println(problem72EditDistance.minDistance(word11,word12));
+        System.out.println(problem72EditDistance.minDistance(word11,word12));//10
+
+        //"kitten"
+        //"sitting"
+        String word13 ="kitten";
+        String word14 ="sitting";
+        System.out.println(problem72EditDistance.minDistance(word13,word14));//3
+
+        String word15 ="pneumonoultramicroscopicsilicovolcanoconiosis";
+        String word16 ="ultramicroscopically";
+        System.out.println(problem72EditDistance.minDistance(word15,word16));//27
 
     }
 }
